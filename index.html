@@ -1,112 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invoice</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <nav class="navbar">
-    <div class="container-fluid">
-      <a href="#">
-        <h1>Invoice Generator</h1>
-      </a>
-    </div>
-  </nav>
-  <section>
-
-    <form action="">
-      <h2>Invoice Details</h2>
-      <div class="person-card">
-        <div class="to">
-          <!-- To -->
-          <div class="group align" id="group1">
-            <div class="labels">
-              <label for="cname">Name</label>
-              <label for="cname">Email</label>
-              <label for="cname">Contact No</label>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a href="#">
+          <h1>Invoice Generator</h1>
+        </a>
+      </div>
+    </nav>
+    <section>
+      <form action="">
+        <h2>Invoice Details</h2>
+        <div class="person-card">
+          <div class="to">
+            <!-- To -->
+            <div class="group align" id="group1">
+              <div class="labels">
+                <label for="cname">Name</label>
+                <label for="cname">Email</label>
+                <label for="cname">Contact No</label>
+              </div>
+              <div class="inputs">
+                <input
+                  type="text"
+                  class="cname"
+                  placeholder="Client's Name"
+                /><br />
+                <input
+                  type="email"
+                  class="cemail"
+                  placeholder="Client's Email"
+                />
+                <br />
+                <input
+                  type="text"
+                  class="cphone"
+                  placeholder="Client's Contact Number"
+                />
+              </div>
             </div>
-            <div class="inputs">
-              <input type="text" class="cname" placeholder="Client's Name" /><br>
-              <input type="email" class="cemail" placeholder="Client's Email" />
-              <br>
-              <input type="text" class="cphone" placeholder="Client's Contact Number" />
+
+            <div class="group align" id="group2">
+              <div class="labels">
+                <label for="baddress" class="address">Client's Address</label
+                ><br />
+              </div>
+              <div class="inputs">
+                <input
+                  type="text"
+                  class="caddress"
+                  placeholder="Street"
+                /><br />
+                <input
+                  type="text"
+                  class="caddress"
+                  placeholder="City/State"
+                /><br />
+                <input type="text" class="caddress" placeholder="Zip Code" />
+              </div>
             </div>
+
+            <div class="group align">
+              <div class="labels">
+                <label for="inumber">Invoice No</label>
+                <label for="date">Date</label>
+              </div>
+              <div class="inputs">
+                <input
+                  type="text"
+                  class="inumber"
+                  placeholder="INV0000"
+                /><br />
+                <input type="date" class="date" />
+              </div>
+            </div>
+            <br />
+            <br />
           </div>
-
-          <div class="group align" id="group2">
-            <div class="labels">
-              <label for="baddress" class="address">Client's Address</label><br>
-            </div>
-            <div class="inputs">
-              <input type="text" class="caddress" placeholder="Street" /><br>
-              <input type="text" class="caddress" placeholder="City/State" /><br>
-              <input type="text" class="caddress" placeholder="Zip Code" />
-            </div>
-
-          </div>
-
-          <div class="group align">
-            <div class="labels">
-              <label for="inumber">Invoice No</label>
-              <label for="date">Date</label>
-            </div>
-            <div class="inputs">
-              <input type="text" class="inumber" placeholder="INV0000" /><br>
-              <input type="date" class="date" />
-            </div>
-          </div>
-          <br />
-          <br />
         </div>
-      </div>
-      <br />
+        <br />
 
-      <div class="calc">
-        <div class="desc">
-          <div class="main">
-            <h5>DESCRIPTION</h5>
-          </div>
-          <div class="sub">
-            <h5 id="rate">RATE</h5>
-            <h5 id="qty">QTY</h5>
-            <h5 id="amount">AMOUNT</h5>
-          </div>
-        </div>
-        
-        <div class="main-desc">
-          <!-- Component-start -->
-          <div class="component">
-            <div class="desc-group">
-              <input type="text" class="" placeholder="Item Description">
-              <input type="text" class="" placeholder="Additional Details">
+        <div class="calc">
+          <div class="desc">
+            <div class="main">
+              <h5>DESCRIPTION</h5>
             </div>
-            <div class="extra-group">
-              <input type="text" class="" placeholder="0.00">
-              <input type="text" class="" placeholder="0">
-              <input type="text" class="" placeholder="₹0.00">
+            <div class="sub">
+              <h5 id="rate">RATE</h5>
+              <h5 id="qty">QTY</h5>
+              <h5 id="amount">AMOUNT</h5>
             </div>
           </div>
-          <!-- Component-end -->
+
+          <div class="main-desc">
+            <!-- Component-start -->
+            <div class="component">
+              <div class="desc-group">
+                <input type="text" class="" placeholder="Item Description" />
+                <input type="text" class="" placeholder="Additional Details" />
+              </div>
+              <div class="extra-group">
+                <input type="text" class="" placeholder="0.00" />
+                <input type="text" class="" placeholder="0" />
+                <input type="text" class="" placeholder="₹0.00" />
+              </div>
+            </div>
+            <!-- Component-end -->
+          </div>
+          <button class="btn fieldbtn">Add Field</button>
         </div>
-        <button class="btn fieldbtn">Add Field</button>
-      </div>
+        <!-- <div class="head"> -->
+          <h3 id="notes">Notes</h3>
+        <!-- </div> -->
+        <div class="notes">
+          <textarea name="notes" id="note" cols="100" rows="10"></textarea>
+        </div>
 
-      <div class="notes">
-        <h3>Notes</h3>
-        <textarea name="notes" id="note" cols="100" rows="10"></textarea>
-      </div>
-
-      <div class="mainbtns">
-        <button class="btn">Reset</button>
-        <button class="btn">Proceed</button>
-      </div>
-    </form>
-  </section>
-</body>
-
+        <div class="mainbtns">
+          <button class="btn">Reset</button>
+          <button class="btn">Proceed</button>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>

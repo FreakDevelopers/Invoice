@@ -54,6 +54,8 @@ h2{
 .person-card{
     display: flex;
     justify-content: center;
+    max-width: 74%;
+    margin-bottom: 20px;
 }
 
 .to{
@@ -61,10 +63,10 @@ h2{
     background-color: white;
     justify-content: space-evenly;
     box-shadow: 0px 0px 10px 0px #888888;
-    padding: 30px;
-    margin: 20px;
+    padding: 45px;
+    margin-top: 20px;
     border-radius: 2px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .to input{
@@ -210,13 +212,23 @@ h5{
 }
 
 .notes{
-    margin-top: 50px;
-    width: 74%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin-top: 50px; */
+    width: 68%;
 }
 
-.notes > h3{
+/* .head{
+    display: flex;
+    justify-self: left;
+} */
+#notes {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-align: left;
-    margin-bottom: 20px;
+    width: 68%;
 }
 
 textarea{
@@ -226,7 +238,7 @@ textarea{
 
 .mainbtns{
     margin-top: 50px;
-    width: 74%;
+    width: 68%;
 }
 
 .mainbtns > button{
@@ -238,5 +250,5 @@ textarea{
     background-color: white;
     box-shadow: 0px 0px 10px 0px #888888;
     padding: 10px;
-    width: 72%;
+    max-width: 74%;
 }
