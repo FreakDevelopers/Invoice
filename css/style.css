@@ -1,254 +1,253 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar{
-    background: rgb(54, 52, 52);
-    z-index: 100;
-    position: sticky;
-    top: 0;
-}
-
-.navbar>.container-fluid{
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 18px;
-    box-shadow: yellowgreen;
-    
-}
-a{
-    text-decoration: none;
-}
-h1{
-    color: whitesmoke;
-    text-align: center;
-    margin-left: 155px;
-}
-
-section{
-    padding-bottom: 50px;
+body {
     background-color: whitesmoke;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-form input:focus, button:focus, textarea:focus{
+input:focus,
+textarea:focus {
     outline: none;
 }
 
-h2{
+input,
+label {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Navbar start */
+.navbar {
+    display: flex;
+    align-items: center;
+    min-height: 4em;
+    background-color: rgb(61, 57, 57);
+    top: 0;
+    position: sticky;
+    font-family: Ubuntu;
+    padding: 20px;
+    z-index: 100;
+}
+
+.navbar h1 {
+    margin-left: 9.4rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Navbar end */
+
+/* Container start */
+.container {
+    min-height: 100vh;
+    background-color: rgb(231, 231, 225);
+    padding: 2rem;
+}
+
+.container h2 {
     text-align: center;
-    margin-top: 30px;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.person-card{
-    display: flex;
-    justify-content: center;
-    max-width: 74%;
-    margin-bottom: 20px;
+/* Main start */
+.main {
+    max-width: 65rem;
+    margin: 2rem auto;
 }
 
-.to{
+/* Customer Div start */
+.customer {
     display: flex;
+    justify-content: space-around;
     background-color: white;
-    justify-content: space-evenly;
-    box-shadow: 0px 0px 10px 0px #888888;
-    padding: 45px;
-    margin-top: 20px;
-    border-radius: 2px;
-    max-width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 20px #888888;
 }
 
-.to input{
-    margin: 10px 0px;
-    padding: 10px;
-    /* width: 100%; */
-}
-
-.address{
-    margin-top: 10px;   
-}
-
-/* Details Section */
-
-.details{
+.labels {
     display: flex;
     flex-direction: column;
-    border: 2px solid gray;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 7px;
-    width: 20%;
-}
-
-.details input{
-    margin: 10px 0px;
-    padding: 10px;
-    width: 100%;
-}
-
-#group1 > .inputs > input{
-    width: 100%;
-}
-
-#group1{
-    margin-right: 50px;
-}
-
-#group2{
-    margin-right: 30px;
-}
-
-.labels{
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
     align-items: flex-end;
 }
 
-.labels > label{
-    margin: 20px 0;
+.labels label {
+    margin: 0.8rem 0rem;
+    padding: 0.4rem;
 }
 
-.align{
-    display: flex;
-}
-
-.date{
-    width: 86%;
-}
-
-
-
-.desc{
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
-    width: 100%;
-}
-
-h5{
-    margin: 10px 0;
-}
-
-.component{
-    /* margin: 20px 0; */
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.desc-group{
+.inputs {
     display: flex;
     flex-direction: column;
-    width: 40%;
 }
 
-.extra-group{
+.inputs input {
+    margin: 0.8rem 0rem;
+    padding: 0.4rem;
+}
+
+#address-inputs {
+    max-width: 10rem;
+}
+
+/* Customer Div end */
+
+/* Desc Div starts */
+.desc {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 20px #888888;
 }
 
-.component input{
-    margin: 10px 0px;
-    padding: 10px;
+/* Head Div start */
+.head {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
 }
 
-.extra-group > input{
-    height: fit-content;
-    margin-left: 100px ;
-    width: 15%;
+.headers {
+    padding: 0.7rem 1.5rem;
+}
+
+/* Head Div end */
+
+/* Wrap Div start */
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrap Div end */
+
+/* Component Div start */
+.component {
+    display: flex;
+}
+
+.component input {
+    padding: 0.7rem 1rem;
+}
+
+.component .wrap-row input {
+    max-width: 6rem;
     text-align: center;
 }
 
-.main{
-    width: 40%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.sub{
-    display: flex;
+.component .wrap-column input {
+    margin-bottom: 0.4rem;
     width: 100%;
 }
 
-#rate{
-    margin-left: 150px;
+.wrap-column {
+    padding: 1rem;
+    max-width: 17rem;
 }
 
-#qty{
-    margin-left: 200px;
+.wrap-row {
+    padding: 1rem;
+    width: 100%;
 }
 
-#amount{
-    margin-left: 190px;
+#rate {
+    position: relative;
+    left: 3rem;
 }
 
-.btn{
-    padding: 8px;
+#quantity {
+    position: relative;
+    left: 11.5rem;
+}
+
+#amount {
+    position: relative;
+    left: 21rem;
+}
+
+.wrap-row .deletebtn {
+    position: relative;
+    top: 0rem;
+    right: -361px;
+    padding: 0rem;
+    height: 2rem;
+    width: 2rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: rgb(61, 57, 57);
     color: whitesmoke;
-    background: rgba(0, 0, 0, 0.8);
-    border: none;
+    border-radius: 4px;
+}
+
+.deletebtn:hover {
+    color: rgb(61, 57, 57);
+    background-color: whitesmoke;
+}
+
+/* Component Div end */
+
+#addbtn {
+    margin: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    max-width: 3rem;
+    background-color: rgb(61, 57, 57);
+    color: whitesmoke;
     border-radius: 3px;
 }
 
-.btn:hover{
+#addbtn:hover {
+    color: rgb(61, 57, 57);
     background-color: whitesmoke;
-    color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-.notes{
+/* Desc Div ends */
+
+/* Note start */
+.note {
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    /* margin-top: 50px; */
-    width: 68%;
-}
-
-/* .head{
-    display: flex;
-    justify-self: left;
-} */
-#notes {
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: left;
-    width: 68%;
-}
-
-textarea{
-    resize: none;
-    padding: 10px;
-}
-
-.mainbtns{
-    margin-top: 50px;
-    width: 68%;
-}
-
-.mainbtns > button{
-    margin-right: 10px;
-    width: 10%;
-}
-
-.calc{
     background-color: white;
-    box-shadow: 0px 0px 10px 0px #888888;
-    padding: 10px;
-    max-width: 74%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 20px #888888;
 }
+
+.note label {
+    margin-right: 1rem;
+}
+
+.note textarea {
+    resize: none;
+}
+
+/* Note end */
+
+/* Main Button */
+.mainbtn {
+    padding: 0.6em;
+    border-radius: 3px;
+    color: whitesmoke;
+    background-color: rgb(61, 57, 57);
+}
+
+.mainbtn:hover {
+    color: rgb(61, 57, 57);
+    background-color: #fefefe;
+}
+
+/* Main Button */
+
+/* Main end */
+
+/* Container end */

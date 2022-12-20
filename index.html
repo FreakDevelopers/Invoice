@@ -1,134 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invoice</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="container-fluid">
-        <a href="#">
-          <h1>Invoice Generator</h1>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Generator - FD</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <h1>Invoice Generator - Freak Developers</h1>
+  </div>
+  <div class="container">
+    <h2>Invoice Details</h2>
+
+    <div class="main">
+      <div class="customer">
+        <div class="labels">
+          <label for="cname">Name</label>
+          <label for="cemail">Email</label>
+          <label for="ccontact">Contact No</label>
+        </div>
+        <div class="inputs">
+          <input type="text" name="cname" id="cname" placeholder="Client's Name" />
+          <input type="email" name="cemail" id="cemail" placeholder="Client's Email" />
+          <input type="text" name="ccontact" id="ccontact" placeholder="Client's Contact Number" />
+        </div>
+        <div class="labels">
+          <label for="caddress">Client's Address</label>
+        </div>
+        <div class="inputs" id="address-inputs">
+          <input type="text" name="caddress" id="caddress" placeholder="Street" />
+          <input type="text" name="city-state" id="city-state" placeholder="City/State" />
+          <input type="text" name="zipcode" id="zipcode" placeholder="Zipcode" />
+        </div>
+        <div class="labels">
+          <label for="invoiceno">Invoice No</label>
+          <label for="date">Date</label>
+        </div>
+        <div class="inputs">
+          <input type="text" name="invoiceno" id="invoiceno" placeholder="INV000000" />
+          <input type="date" name="date" id="date" placeholder="INV000000" />
+        </div>
       </div>
-    </nav>
-    <section>
-      <form action="">
-        <h2>Invoice Details</h2>
-        <div class="person-card">
-          <div class="to">
-            <!-- To -->
-            <div class="group align" id="group1">
-              <div class="labels">
-                <label for="cname">Name</label>
-                <label for="cname">Email</label>
-                <label for="cname">Contact No</label>
-              </div>
-              <div class="inputs">
-                <input
-                  type="text"
-                  class="cname"
-                  placeholder="Client's Name"
-                /><br />
-                <input
-                  type="email"
-                  class="cemail"
-                  placeholder="Client's Email"
-                />
-                <br />
-                <input
-                  type="text"
-                  class="cphone"
-                  placeholder="Client's Contact Number"
-                />
-              </div>
-            </div>
 
-            <div class="group align" id="group2">
-              <div class="labels">
-                <label for="baddress" class="address">Client's Address</label
-                ><br />
-              </div>
-              <div class="inputs">
-                <input
-                  type="text"
-                  class="caddress"
-                  placeholder="Street"
-                /><br />
-                <input
-                  type="text"
-                  class="caddress"
-                  placeholder="City/State"
-                /><br />
-                <input type="text" class="caddress" placeholder="Zip Code" />
-              </div>
-            </div>
-
-            <div class="group align">
-              <div class="labels">
-                <label for="inumber">Invoice No</label>
-                <label for="date">Date</label>
-              </div>
-              <div class="inputs">
-                <input
-                  type="text"
-                  class="inumber"
-                  placeholder="INV0000"
-                /><br />
-                <input type="date" class="date" />
-              </div>
-            </div>
-            <br />
-            <br />
-          </div>
+      <div class="desc">
+        <div class="head">
+          <span class="headers" id="d">Description</span>
+          <span class="headers" id="r">Rate</span>
+          <span class="headers" id="q">Quantity</span>
+          <span class="headers" id="a">Amount</span>
         </div>
-        <br />
+        <div class="wrap" id="wrap"></div>
 
-        <div class="calc">
-          <div class="desc">
-            <div class="main">
-              <h5>DESCRIPTION</h5>
-            </div>
-            <div class="sub">
-              <h5 id="rate">RATE</h5>
-              <h5 id="qty">QTY</h5>
-              <h5 id="amount">AMOUNT</h5>
-            </div>
-          </div>
+        <input type="button" value="+" id="addbtn" onclick="addComponent()" />
+      </div>
 
-          <div class="main-desc">
-            <!-- Component-start -->
-            <div class="component">
-              <div class="desc-group">
-                <input type="text" class="" placeholder="Item Description" />
-                <input type="text" class="" placeholder="Additional Details" />
-              </div>
-              <div class="extra-group">
-                <input type="text" class="" placeholder="0.00" />
-                <input type="text" class="" placeholder="0" />
-                <input type="text" class="" placeholder="₹0.00" />
-              </div>
-            </div>
-            <!-- Component-end -->
-          </div>
-          <button class="btn fieldbtn">Add Field</button>
-        </div>
-        <!-- <div class="head"> -->
-          <h3 id="notes">Notes</h3>
-        <!-- </div> -->
-        <div class="notes">
-          <textarea name="notes" id="note" cols="100" rows="10"></textarea>
-        </div>
+      <div class="note">
+        <label for="note">Note :</label>
+        <textarea name="note" id="note" cols="70" rows="6" placeholder="Enter any note..."></textarea>
+      </div>
 
-        <div class="mainbtns">
-          <button class="btn">Reset</button>
-          <button class="btn">Proceed</button>
-        </div>
-      </form>
-    </section>
-  </body>
+      <input type="button" class="mainbtn" value="Reset" />
+      <input type="button" class="mainbtn" value="Proceed" />
+    </div>
+  </div>
+</body>
+
 </html>
