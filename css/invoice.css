@@ -1,0 +1,270 @@
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+}
+
+label, span{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.invoice-head{
+    border-bottom: 4px solid black;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin: 0.2em 0;
+}
+
+
+/* Container Div start */
+.container{
+    width: 100%;
+    padding: 0 1.3rem;
+}
+
+/* Wrap Div start */
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+
+.wrap1{
+    display: flex;
+    padding-left: 2rem;
+}
+
+.wrap1 img{
+    width: 8rem;
+    height: 8rem;
+}
+
+.from{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+.from label{
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+}
+
+#btitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(90, 88, 88);
+}
+
+.wrap2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem;
+}
+
+.wrap2 span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0.5rem 0;
+}
+
+.wrap2 label{
+    margin: 0.2rem 0;
+    font-size: 0.8rem;
+}
+/* Wrap Div end */
+
+/* Second Div start */
+.second{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.wrap3{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap3 label{
+    margin: 0.4rem 0;
+    font-size: 0.8rem;
+}
+
+#billto{
+    font-size: 0.7rem;
+}
+
+#cname{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(90, 88, 88);
+}
+/* Second Div end */
+
+/* Desc Div starts */
+.desc {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+/* Head Div start */
+.head {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.headers {
+    padding: 0.7rem 0rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#d,#r,#q,#a{
+    position: relative;
+}
+
+#r{
+    left: 29.8rem;
+}
+
+#q{
+    left: 32.8rem;
+}
+
+#a{
+    left: 34.8rem;
+}
+
+/* Head Div end */
+
+/* Wrap Div start */
+.wrap-old {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+
+/* Component Div start */
+.component {
+    display: flex;
+}
+
+.wrap-row label {
+    max-width: 6rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.wrap-column label {
+    margin-bottom: 0.4rem;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.wrap-column {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0; 
+    width: 100%;
+    margin-left: 0.1rem;
+}
+
+.wrap-row {
+    padding: 1rem;
+    width: 100%;
+}
+
+.position1 {
+    position: relative;
+    left: 9.8rem;
+}
+
+.position2 {
+    position: relative;
+    left: 13.8rem;
+}
+
+.position3 {
+    position: relative;
+    left: 17.2rem;
+}
+/* Component Div end */
+
+/* Totals Div start */
+.totals{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.total-labels{
+    max-width: 30rem;
+}
+
+.total-labels div{
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    font-size: 0.8rem;
+    padding: 1rem 1rem 1rem 0rem;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+
+/* Totals Div end */
+
+.note{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.note label, p{
+    font-size: 0.8rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2rem;
+}
+
+/* Desc Div end */
+
+/* SignContainer Div start */
+.sign-container{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 0;
+}
+
+.signature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 10rem;
+    padding: 2rem;
+}
+
+.signature img{
+    width: 5rem;
+    height: 5rem;
+}
+/* Signcontainer Div end */
+
+/* Container Div end */

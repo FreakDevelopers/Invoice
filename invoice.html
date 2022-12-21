@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,102 @@
     <link rel="stylesheet" href="css/invoice.css">
     <script src="js/invoice.js"></script>
 </head>
+
 <body>
-    
+    <div class="invoice-head">
+        <h1>Invoice</h1>
+    </div>
+    <div class="container">
+        <div class="wrap">
+            <div class="wrap1">
+                <img src="/img/logo.png" alt="logo">
+                <div class="from">
+                    <label for="freak" id="btitle">Freak Developers</label>
+                    <label for="freak">Banda</label>
+                    <label for="freak">Sawantwadi, Maharashtra</label>
+                    <label for="freak">416512</label>
+                    <label for="freak">7741941681</label>
+                    <label for="freak">thefreakdevelopers@gmail.com</label>
+                </div>
+            </div>
+            <div class="wrap2">
+                <span>
+                    <label for="invoice" style="font-weight: bold;">INVOICE NO</label>
+                    <label for="invoice">_invoice number</label>
+                </span>
+                <span>
+                    <label for="date" style="font-weight: bold;">DATE</label>
+                    <label for="date">_date</label>
+                </span>
+                <span>
+                    <label for="due" style="font-weight: bold;">DUE</label>
+                    <label for="invoice">_due</label>
+                </span>
+                <span>
+                    <label for="balancedue" style="font-weight: bold;">BALANCE DUE</label>
+                    <label for="balancedue">_balance due</label>
+                </span>
+            </div>
+        </div>
+        <div class="second">
+            <div class="wrap3">
+                <label for="billto" id="billto">BILL TO</label>
+                <label for="cname" id="cname">Customer Name</label>
+                <label for="street">street</label>
+                <label for="city-state">city-state</label>
+                <label for="zipcode">zipcode</label>
+                <label for="cmobile">cmobile</label>
+                <label for="cemail">cemail</label>
+            </div>
+        </div>
+        <div class="desc">
+            <div class="head">
+              <span class="headers" id="d">Description</span>
+              <span class="headers" id="r">Rate</span>
+              <span class="headers" id="q">Quantity</span>
+              <span class="headers" id="a">Amount</span>
+            </div>
+            <!-- Div for dynamic amount details👇 -->
+            <div class="wrap-old" id="wrap-old">
+                <div class="component">
+                    <div class="wrap-column">
+                        <label for="itemdesc" style="font-weight: bold;">Item Description</label>
+                        <label for="itemdetails">Item Details</label>
+                    </div>
+                    <div class="wrap-row">
+                        <label class="position1" for="Rate">₹0.00</label>
+                        <label class="position2" for="Quantity">0</label>
+                        <label class="position3" for="Amount">₹0.00</label>
+                    </div>
+                </div>
+            </div>
+            <div class="totals">
+                <div class="total-labels">
+                    <div>
+                        <label for="total" style="font-weight: bold;">TOTAL</label>
+                        <label for="total">₹0.00</label>
+                    </div>
+                    <div>
+                        <label for="total" style="font-weight: bold;">BALANCE DUE</label>
+                        <span>
+                            <span style="font-weight: bold; margin-right: 0.4rem;">INR</span>
+                            <label for="total">₹0.00</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="note">
+                <label for="note" style="font-weight: bold;">Note</label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eius, laboriosam similique sint illo voluptate eos eaque omnis vel iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, saepe!</p>
+            </div>
+        </div>
+    </div>
+    <div class="sign-container">
+        <div class="signature">
+            <img src="/img/logo.png" alt="">
+            <span>signature</span>
+        </div>
+    </div>
 </body>
+
 </html>
