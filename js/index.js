@@ -17,11 +17,14 @@ function addComponent() {
   itemdesc.type = "text";
   itemdesc.name = "itemdesc";
   itemdesc.placeholder = "Item Description";
-  var itemdetails = document.createElement("input");
+  var itemdetails = document.createElement("textarea");
   itemdetails.id = "itemdetails";
-  itemdetails.type = "text";
+  itemdetails.rows = "3";
+  itemdetails.cols = "25";
   itemdetails.name = "itemdetails";
   itemdetails.placeholder = "Additional Details";
+  itemdetails.style.padding = "0.7rem 1rem";
+  itemdetails.style.resize = "none";
 
   // Creation of input od wrap-row
   var rate = document.createElement("input");
@@ -65,4 +68,21 @@ function deleteComponent(ev) {
     document.getElementById(deletebtnid).parentElement.parentElement.id;
   var removeElement = document.getElementById(componentid);
   removeElement.remove();
+}
+
+// Pop-Up window for invoice print
+function newWindow(){
+  window.open("invoice.html", "invoice", "popup");
+}
+
+// Reset all fields
+function resetFields(){
+  let x=window.confirm('Are you sure?');
+  console.log(x);
+  if(x==true){
+    for(i=0; i<=10; i++){
+      var abc = document.getElementsByTagName('input')[i];
+      console.log(abc);
+    }
+  }
 }

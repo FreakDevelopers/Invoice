@@ -114,8 +114,8 @@ label {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .headers {
@@ -137,7 +137,7 @@ label {
     display: flex;
 }
 
-.component input {
+.component input, textarea {
     padding: 0.7rem 1rem;
 }
 
