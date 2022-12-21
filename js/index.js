@@ -7,6 +7,7 @@ function addComponent() {
   var div = document.createElement("div");
   div.className = "component";
   div.id = "component" + i;
+  div.style.borderBottom = "1px dotted rgba(0,0,0,0.8)";
 
   var divwc = document.createElement("div");
   divwc.className = "wrap-column";
