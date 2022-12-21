@@ -161,17 +161,17 @@ label {
     width: 100%;
 }
 
-#rate {
+.position1 {
     position: relative;
     left: 3rem;
 }
 
-#quantity {
+.position2 {
     position: relative;
     left: 11.5rem;
 }
 
-#amount {
+.position3 {
     position: relative;
     left: 21rem;
 }
