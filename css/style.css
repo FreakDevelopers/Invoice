@@ -60,6 +60,8 @@ label {
 .main {
     max-width: 65rem;
     margin: 2rem auto;
+        box-shadow: 0px 0px 20px #888888;
+
 }
 
 /* Customer Div start */
@@ -68,8 +70,6 @@ label {
     justify-content: space-around;
     background-color: white;
     padding: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0px 0px 20px #888888;
 }
 
 .labels {
@@ -106,7 +106,6 @@ label {
     background-color: white;
     padding: 1.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0px 0px 20px #888888;
 }
 
 /* Head Div start */
@@ -129,8 +128,33 @@ label {
     display: flex;
     flex-direction: column;
 }
-
 /* Wrap Div end */
+
+/* line Div start */
+.line{
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 2rem;
+}
+
+.totals{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    right: 2rem;
+}
+
+.wrap-total-labels{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 2rem;
+}
+
+.wrap-total-labels label{
+    margin-bottom: 1rem;
+}
 
 /* Component Div start */
 .component {
@@ -217,14 +241,15 @@ label {
 /* Note start */
 .note {
     display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 1.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0px 0px 20px #888888;
 }
 
 .note label {
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .note textarea {
@@ -249,5 +274,12 @@ label {
 /* Main Button */
 
 /* Main end */
+
+/* lastbtn Div start */
+.lastbtn{
+    max-width: 65rem;
+    margin: 2rem auto;
+}
+/* lastbtn Div end */
 
 /* Container end */

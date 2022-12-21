@@ -57,13 +57,28 @@
         <div class="wrap" id="wrap"></div>
 
         <input type="button" value="+" id="addbtn" onclick="addComponent()" />
-      </div>
+        <div class="line">
+          <div class="totals">
+            <div class="wrap-total-labels">
+              <label for="subtotal">Subtotal</label>
+              <label for="total">Total</label>
+              <label for="balancedue">Balance Due</label>
+            </div>
+            <div class="wrap-total-labels">
+              <label for="subtotal">₹0.00</label>
+              <label for="total">₹0.00</label>
+              <label for="balancedue">₹0.00</label>
+            </div>
 
-      <div class="note">
-        <label for="note">Note :</label>
-        <textarea name="note" id="note" cols="70" rows="6" placeholder="Enter any note..."></textarea>
+          </div>
+        </div>
+        <div class="note">
+          <label for="note">Notes</label>
+          <textarea name="note" id="note" cols="70" rows="6" placeholder="Enter any note..."></textarea>
+        </div>
       </div>
-
+    </div>
+    <div class="lastbtn">
       <input type="button" class="mainbtn" value="Reset" onclick="resetFields()" />
       <input type="button" class="mainbtn" value="Proceed" onclick="newWindow()" />
     </div>
